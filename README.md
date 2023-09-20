@@ -8,6 +8,10 @@
 
 Intensivão proporcionado pela Rocketseat, com foco no HTML e CSS, sempre priorizando responsividade, acessibilidade e novos padrões.
 
+É possível conferir o site hospedado no seguinte link:
+
+https://lucassch2410.github.io/rocketseat-1/
+
 --- 
 
 # 🚀 Tecnologias
