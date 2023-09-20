@@ -10,7 +10,7 @@ Intensivão proporcionado pela Rocketseat, com foco no HTML e CSS, sempre priori
 
 --- 
 
-🚀 # Tecnologias
+# 🚀 Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 HTML
