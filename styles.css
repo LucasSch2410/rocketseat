@@ -1,0 +1,292 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%; /* 10px */
+    --base-font: 'Mulish', sans-serif;
+
+    /* Colors */
+    --white: #ffffff;
+    --light-gray: #f9f4fb;
+    --accent-color: #b52184;
+    --text-base-color: #312d64;
+    --gradient-background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+}
+
+body{
+    background: var(--light-gray);
+    font-family: var(--base-font);
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* Typography */
+
+h1{
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: normal;
+    font-style: normal;
+    color: var(--accent-color);
+}
+
+h2 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    font-weight: 900;
+    color: var(--accent-color);
+}
+  
+h3 {
+    font-size: 2.9rem;
+    line-height: 3.6rem;
+    font-weight: 900;
+    color: var(--accent-color);
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 600;
+    color: var(--text-base-color);
+}
+
+/* Form */
+button,
+input,
+fieldset,
+textarea {
+  border: none;
+  background: none;
+  font-family: var(--base-font);
+}
+
+/* Hero Section */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 3.3rem 9.3rem 3.3rem;
+}
+
+.hero > :first-child{
+    width: 100%;
+}
+
+.hero-text{
+    margin-top: 1.7rem;
+}
+
+.hero-text h1{
+    text-align: center;
+}
+
+.hero-text p{
+    text-align: center;
+    font-size: 2.0rem;
+    margin: 0.5rem 0 3.5rem 0;
+}
+
+.hero-title img {
+    width: 25%;
+}
+
+.hero-title a{
+    display: block;
+    text-align: center;
+}
+
+
+
+/* Cards */
+
+#cards{
+    background: var(--gradient-background);
+    display: flex;
+    flex-direction: column;
+    gap: 5.0rem;
+    padding: 5.3rem 4.0rem;
+
+}
+
+#cards .card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 2.6rem;
+}
+
+#cards .card img {
+    width: 8rem;
+    margin-bottom: 3.3rem;
+  }
+
+#cards .card h2{
+    margin-bottom: 2.0rem;
+}
+
+#cards .card p {
+    width: 90%;
+}
+
+/* Form */
+
+.contact{
+    padding: 7.8rem 3.9rem 6.5rem;
+    width: 100%;
+}
+
+.contact h2{
+    margin-bottom: 4.3rem;
+}
+
+.contact form input{
+    border: 2px solid var(--text-base-color);
+    border-radius: 1.6rem;
+    padding: 1.2rem 1.6rem 1.6rem 4.5rem;
+    width: 100%;
+    color: #000;
+}
+
+.contact form input::placeholder, .contact form textarea::placeholder{
+    color: var(--text-base-color);
+}
+
+.contact form textarea{
+    border: 2px solid var(--text-base-color);
+    border-radius: 1.6rem;
+    padding: 1.2rem 1.6rem 1.6rem 1.4rem;
+    height: 12.8rem;
+    width: 100%;
+}
+
+.contact form .input-wrapper {
+    margin-bottom: 2.4rem;
+}
+
+.contact form button {
+    background: var(--gradient-background);
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    padding: 1rem 1.6rem;
+    border-radius: 1.6rem;
+    cursor: pointer;
+    transition: filter 200ms;
+}
+
+#name {
+    background: url(./images/person.svg) no-repeat scroll 1rem 1rem;
+}
+  
+#email {
+    background: url(./images/at.svg) no-repeat scroll 1rem 1rem;
+}
+
+/* Footer */
+
+footer{
+    padding: 3.2rem 1.6rem;
+    background: var(--gradient-background);
+}
+
+footer p{
+    color: var(--white);
+    font-size: 1.9rem;
+    font-weight: 600;  
+    text-align: center;
+}
+
+
+
+@media (min-width: 1440px) {
+
+    /* Typography */
+
+    h1{
+        font-size: 6rem;
+    }
+
+    h2{
+        font-size: 3.2rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    /* Hero */
+
+    .hero{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 3rem 9.3rem 10rem;
+    }
+
+    .hero > :first-child{
+        order: 2;
+        width: auto;
+    }    
+    
+    .hero-title{
+        order: 1;
+        margin-top: 18rem;
+    }
+
+    .hero-title img{
+        width: 14%;
+    }
+
+    .hero-text p, .hero-text h1{
+        text-align: start;
+    }
+
+    .hero-text p{
+        font-size: 3.2rem;
+        margin-bottom: 16rem;
+    }
+
+    /* Cards */
+
+        
+    #cards{
+        flex-direction: row;
+        gap: 6.0rem;
+        min-height: 58rem;
+        padding: 6.4rem 12rem;
+    }
+
+    #cards .card {
+        padding: 3rem;
+        width: 33%;
+    }
+
+    #cards .card img {
+        width: 10rem;
+    }
+
+    #cards .card p {
+        width: 60%;
+    }
+    
+    /* Form */
+
+    .contact{
+        background: url(images/stars.svg) no-repeat;
+        background-position: right;
+        padding: 8.5rem 50% 10rem 12rem;
+    }
+
+
+}
