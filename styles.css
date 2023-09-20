@@ -231,7 +231,7 @@ footer p{
     .hero{
         flex-direction: row;
         justify-content: space-between;
-        padding: 0 3rem 9.3rem 10rem;
+        padding: 0 3rem 9.3rem 12rem;
     }
 
     .hero > :first-child{
@@ -256,6 +256,11 @@ footer p{
         font-size: 3.2rem;
         margin-bottom: 16rem;
     }
+
+    .hero-title a{
+        text-align: left;
+    }
+    
 
     /* Cards */
 
