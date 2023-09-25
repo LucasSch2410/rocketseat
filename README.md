@@ -9,6 +9,3 @@ Aqui estão alguns projetos feitos ao decorrer do curso da Rocketseat, com proje
 ![63c83ebeef5ea2f341f3dd4c_OG-perpetuo](https://github.com/LucasSch2410/rocketseat/assets/45702317/12512eaf-7b8d-4027-b26b-9b9417ebe8fe)
 
 
-
---- 
-
