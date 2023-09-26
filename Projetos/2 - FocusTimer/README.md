@@ -11,7 +11,7 @@ Aqui está um projeto de um timer feito em JS, com foco na modularização com i
 # 🚀 Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-HTML
-CSS
-JS
-PHOSPOR ICONS
+- HTML
+- CSS
+- JS
+- PHOSPOR ICONS
