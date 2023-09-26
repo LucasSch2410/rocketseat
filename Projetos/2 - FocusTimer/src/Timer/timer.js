@@ -18,6 +18,7 @@ export function countdown(){
     if (state.minutes == 0 && state.seconds == -1){
         state.seconds = 0
         state.isRunning = false
+        document.documentElement.classList.remove('running')
         sounds.kichenTimer.play()
         return
     }    
