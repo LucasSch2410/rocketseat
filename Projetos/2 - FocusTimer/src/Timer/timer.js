@@ -24,7 +24,7 @@ export function countdown(){
     }    
     
     if (seconds == -1){
-        seconds = 59
+        seconds = state.seconds = 59
         minutes--
         state.minutes = minutes
     }

@@ -32,8 +32,6 @@ export function plusMinutes(){
         timer.runningTimer(state.minutes, state.seconds)
         sounds.buttonPress.play()
     }
-
-    
 }
 
 export function minusMinutes(){
