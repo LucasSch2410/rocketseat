@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Source+Serif+4:opsz@8..60&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="./src/main.js" defer></script>
+</head>
+<body>
+    <main>
+        <div id="app">
+            <section id="timer" class="flex">
+                <span id="minutes">25</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </section>
+            <section id="controls" class="flex">
+                <button 
+                data-action="play"
+                class="ph ph-play-circle"></button>
+                <button 
+                data-action="play"
+                class="ph ph-pause-circle"></button>
+
+                <button 
+                data-action="stop"
+                class="ph ph-stop-circle"></button>
+                <button 
+                data-action="plusMinutes"
+                class="ph ph-plus-circle"></button>
+                <button 
+                data-action="minusMinutes"
+                class="ph ph-minus-circle"></button>
+            </section>
+        </div>
+
+        <section class="cards">
+            <button data-action="tree" class="ph-thin ph-tree ph-light"></button>
+            <button data-action="cloud" class="ph-thin ph-cloud-rain ph-light"></button>
+            <button data-action="market" class="ph-thin ph-storefront ph-light"></button>
+            <button data-action="fire" class="ph-thin ph-campfire ph-light"></button>
+        </section>
+    </main>
+</body>
+</html>

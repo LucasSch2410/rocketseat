@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-color: hsl(240, 6%, 21%);
+    --card-color: hsl(240, 9%, 89%);
+    --card-secondary-color: hsl(194, 97%, 31%);
+
+    font-size: clamp(40%, 1% + 2vw, 65.5%);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+main {
+    font-size: 13rem;
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    width: 82rem;
+    margin: 0 auto;
+    color: var(--font-color);
+    transition: 1s;
+
+}
+
+
+@media (max-width: 1000px) {
+    body{
+        display: grid;
+        align-content: center;
+        height: 100vh;
+    }
+
+    main{
+        grid-template-columns: 1fr;
+        transition: 1s;
+
+        height: 60vh;
+        place-content: space-around;
+        width: 100vw;
+    }
+}
+
+html.running .ph-play-circle, html:not(.running) .ph-pause-circle{
+    display: none;
+}
+
+.ph-play-circle, .ph-pause-circle, .ph-stop-circle, .ph-plus-circle, .ph-minus-circle{
+    font-size: 5rem;
+}
+
+.ph-tree, .ph-cloud-rain, .ph-storefront, .ph-campfire{
+    font-size: 7rem;
+}
+
+#controls {
+    gap: 4rem;
+}
+
+#controls button {
+    background: none;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.cards {
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+}
+
+@media (max-width: 1000px) {
+    #app{
+        margin: 0 auto;
+    }
+
+    .cards{
+        margin: 0 auto;
+    }
+}
+
+.cards button {
+    padding: 3.8rem 3rem;
+    border: none;
+    border-radius: 2rem;
+    transition: ease-in-out 0.5s;
+    background-color: var(--card-color);
+}
+
+.cards .secondary-button{
+    background-color: var(--card-secondary-color);
+    color: #fff;
+}
+
+.cards button:hover {
+    transform: scale(1.1);
+}
+
+
