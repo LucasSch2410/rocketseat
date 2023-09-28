@@ -10,8 +10,6 @@ export class favorite {
     }
 
     load(){
-        this.entries = localStorage['@github-favorites:']
-
         this.entries = JSON.parse(localStorage.getItem('@github-favorites:')) || []
     }
 
@@ -26,7 +24,7 @@ export class favorite {
             const userExists = this.entries.find(entry => entry.login === user)
 
             if (userExists){
-                throw new Error('Usuário já consta na tabela')
+                throw new Error('Usuário já consta na tabela!')
             }
                     
             const githubEntry = await GithubUser.search(user)
